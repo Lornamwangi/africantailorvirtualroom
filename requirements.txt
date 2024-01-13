@@ -8,6 +8,7 @@ arrow
 astunparse
 async-timeout
 attrs
+gunicorn
 backoff
 backports.zoneinfo
 blinker
