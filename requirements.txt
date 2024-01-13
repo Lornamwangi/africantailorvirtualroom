@@ -1,5 +1,4 @@
 absl-py
-aiohttp
 aiosignal
 altair
 antlr4-python3-runtime
