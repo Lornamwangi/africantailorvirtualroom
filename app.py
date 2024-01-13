@@ -116,6 +116,11 @@ def upload():
         images.append(new_image)
 
         return redirect(url_for('index'))
+@staticmethod
+@app.route('/', methods=['GET'])
+def home():
+    return "Hello, World!"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if _name_ == '_main_':
+    app.run(host='0.0.0.0', port=5007)
+
