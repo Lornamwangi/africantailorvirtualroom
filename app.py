@@ -1,5 +1,6 @@
 from flask import Flask, render_template, Response, request, redirect, url_for
 import cv2
+cv2.setHeadless()
 import imutils
 import numpy as np
 from werkzeug.utils import secure_filename
