@@ -7,7 +7,8 @@ import os
 
 app = Flask(__name__)
 
-cap = cv2.VideoCapture(0)
+video_path = r'c:\xampp\htdocs\africantailor\Clean.mp4'
+cap = cv2.VideoCapture(video_path)
 curClothId = 0
 size = 100
 images = [
@@ -21,7 +22,8 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def generate_frames():
     global size
-
+video_path = r'c:\xampp\htdocs\africantailor\Clean.mp4'
+cap = cv2.VideoCapture(video_path)
     while True:
         success, cam = cap.read()
         if not success:
